@@ -1,8 +1,8 @@
 import React,{createContext, useReducer} from 'react';;
 
 // Global variables to update UI (assign initial Design ID's)
-let tcolor = "dark-text";
-let bcolor =  "light-bg";  
+let tcolor = "gray-900";
+let bcolor =  "white";  
 
 
 // Store Setup
@@ -21,14 +21,14 @@ function reducer(state,action){
 
         case "Dark":
 
-        tcolor="light-text";
-        bcolor="dark-bg";
+        tcolor="white";
+        bcolor="gray-900";
             return state = "Light";
 
             case "Light":
                 
-            tcolor = "dark-text";
-            bcolor = "light-bg";
+            tcolor = "gray-900";
+            bcolor = "white";
                     return state = "Dark";
 
 
